@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SIGN UP FORM</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(83, 83, 233, 0.59) 40%, rgba(0, 128, 0, 0.5));
+        }
+        form {
+            height: 580px;
+            width: 460px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        form:hover {
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+        }
+        .top {
+            display: flex;
+            gap: 6px;
+        }
+        .top .left {
+            display: flex;
+            flex-direction: column;
+        }
+        .top .right {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo {
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .photo input {
+            height: 100%;
+            width: 100%;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: column;
+        }
+        .top th {
+            text-align: left;
+            width: 210px;
+        }
+        th, td {
+            padding: 10px 0px;
+        }
+        .bottom th {
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            border-radius: 8px;
+            border: 1px solid black;
+            padding: 6px 8px;
+            font-size: 14px;
+        }
+        .top input {
+            padding: 6px 3px;
+        }
+        .bottom input {
+            width: 100%;
+        }
+        a {
+            text-align: center;
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(12, 0, 70);
+            text-decoration: underline;
+        }
+        p {
+            text-align: center;
+        }
+        .t-and-c {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .t-and-c label {
+            margin: 0px 10px;
+        }
+        .t-and-c a {
+            text-decoration: underline;
+        }
+        .t-and-c input {
+            height: 13px;
+            width: 13px;
+        }
+        button {
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            border-radius: 16px;
+            border: none;
+            background-color: hsl(240, 54%, 31%);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: hsl(240, 54%, 21%);
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <h1>SIGN UP</h1>
+            <div class="inputs">
+                <div class="top">
+                    <div class="left">
+                        <table>
+                            <tr>
+                                <th><label for="">First Name:</label></th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="">Last Name:</label></th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="">Gender:</label></th>
+                                <td>
+                                    <input type="radio" name="gender" id="">
+                                    <label for="">Male</label>
+                                    <input type="radio" name="gender" id="">
+                                    <label for="">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="">D.O.B.:</label></th>
+                                <td><input type="date"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="right">
+                        <div class="photo">
+                            <input type="image" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <table>
+                        <tr>
+                            <th><label for="">Email:</label></th>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">Password:</label></th>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">Confirm Password:</label></th>
+                            <td><input type="password"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="t-and-c">
+                <input type="checkbox" name="terms" id="">
+                <label for="terms">I accept the <a href="">Terms & Conditions</a></label>
+            </div>
+            <button>Login</button>
+            <p>Already a member? <a href="login.html">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>
